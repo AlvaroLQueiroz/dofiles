@@ -26,25 +26,30 @@
     "**/node_modules/**": true,
     "**/.venv/**": true,
     "**/nltk/**": true,
-    "**/.egg/**": true
+    "**/.egg/**": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/node_modules/": true,
+    "**/__pycache__/": true,
+    "**/*.sqlite3": true
   },
-
-  // List of paths to ignore when using VS Code format command, including format on save. Uses glob pattern matching.
-  "beautify.ignore": [
-    "**/node_modules",
-    "**/bower_components",
-    "**/.venv/**",
-    "**/nltk/**",
-    "**/.egg/**"
-  ],
 
   // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the files.exclude setting.
   "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
     "**/.venv/**": true,
     "**/nltk/**": true,
-    "**/.egg/**": true
+    "**/.egg/**": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/node_modules/": true,
+    "**/__pycache__/": true,
+    "**/*.sqlite3": true
   },
 
   // Controls how the editor should render whitespace characters, possibilities are 'none', 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
@@ -73,21 +78,38 @@
   "html.format.indentHandlebars": true,
 
   // Fit code within this line limit
-  "prettier.printWidth": 100,
+  "prettier.printWidth": 120,
   // If true, will use single instead of double quotes
   "prettier.singleQuote": true,
 
   // Arguments passed in. Each argument is a separate item in the array.
   "python.linting.pylintArgs": [
     "--load-plugins",
-    "pylint_django",
-    "--disable=C0111,R0903,C0301,W0613,E0401,F5101,E501"
+    "pylint_django"
+    // "--disable=C0111,R0903,C0301,W0613,E0401,F5101,E501"
   ],
   // Arguments passed in. Each argument is a separate item in the array.
-  "python.linting.pep8Args": ["--max-line-length=100"],
+  "python.linting.pep8Args": ["--max-line-length=120"],
   // Whether to lint Python files using pep8
   "python.linting.pep8Enabled": true,
 
-  // Controls which editor is shown at startup, if none is restored from the previous session. Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default), 'newUntitledFile' to open a new untitled file (only opening an empty workspace).
-  "workbench.startupEditor": "newUntitledFile"
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "One Dark+ (Sublime)",
+
+  // Customizes which terminal to run on Windows.
+  "terminal.external.windowsExec": "c:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.integrated.shell.windows": "c:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+
+  // Whether to lint Python files using prospector.
+  "python.linting.prospectorEnabled": true,
+  // Arguments passed in. Each argument is a separate item in the array.
+  "python.linting.prospectorArgs": ["--uses=django", "--strictness=veryhigh", "--max-line-length=120"],
+
+  // Patterns used to exclude files or folders from being linted.
+  "python.linting.ignorePatterns": [
+    ".vscode/*.py",
+    "**/site-packages/**/*.py",
+    "**/migrations/*.py"
+  ]
 }
