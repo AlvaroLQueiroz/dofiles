@@ -20,6 +20,11 @@ pyenv deactivate
 
 pyenv global ipytho2 ipython2 3.6.6 2.7.15 system
 
+curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/.gitconfig > $HOME/.gitconfig
+curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/vscode.json > $HOME/.config/Code/User/settings.json
 
-curl https://raw.githubusercontent.com/AlvaroLQueiroz/dofiles/master/.gitconfig > $HOME/.gitconfig
-curl https://raw.githubusercontent.com/AlvaroLQueiroz/dofiles/master/vscode.json > $HOME/.config/Code/User/settings.json
+
+# create a virtualenv with
+# pyenv virtualenv <py_version> <project_name>
+# go to project directory and run
+# pyenv local <project_name>
