@@ -23,6 +23,8 @@ pyenv global ipytho2 ipython2 3.6.6 2.7.15 system
 curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/.gitconfig > $HOME/.gitconfig
 curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/vscode.json > $HOME/.config/Code/User/settings.json
 
+# MacOS location
+# curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/vscode.json > $HOME/Library/Application\ Support/Code/User/settings.json
 
 # create a virtualenv with
 # pyenv virtualenv <py_version> <project_name>
