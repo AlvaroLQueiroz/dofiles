@@ -101,6 +101,9 @@
   "terminal.external.windowsExec": "c:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
   "terminal.integrated.shell.windows": "c:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
 
+  // Path to Python, you can use a custom version of Python by modifying this setting to include the full path.
+  "python.pythonPath": "~/.pyenv/versions/${workspaceFolderBasename}/bin/python",
+
   // Whether to lint Python files using prospector.
   "python.linting.prospectorEnabled": true,
   // Arguments passed in. Each argument is a separate item in the array.
