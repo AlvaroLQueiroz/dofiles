@@ -14,4 +14,3 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension robinbentley.sass-indented
 code --install-extension wcwhitehead.bootstrap-3-snippets
 code --install-extension donjayamanne.jquerysnippets
-
