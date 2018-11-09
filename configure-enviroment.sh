@@ -52,10 +52,14 @@ pyenv deactivate
 pyenv global ipython2 ipython3 3.6.6 2.7.15 system
 
 # Configure git
+# TODO: Perguntar se deseja configurar user name do git ou usar o do repo.
 curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/.gitconfig >> $HOME/.gitconfig
 
 # Configure VSCode settings
+#TODO: Suportar diferentes SO's
 curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/vscode.json > $HOME/.config/Code/User/settings.json
+# MacOS location
+# curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/vscode.json > $HOME/Library/Application\ Support/Code/User/settings.json
 
 # Increases number of files watched by VSCode
 echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf
@@ -65,12 +69,3 @@ sysctl -p
 curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/.bashrc >> $HOME/.bashrc
 
 # TODO
-
-
-# MacOS location
-# curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/vscode.json > $HOME/Library/Application\ Support/Code/User/settings.json
-
-# create a virtualenv with
-# pyenv virtualenv <py_version> <project_name>
-# go to project directory and run
-# pyenv local <project_name>
