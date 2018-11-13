@@ -85,7 +85,7 @@
   "python.linting.pep8Enabled": false,
 
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
 
   // Path to Python, you can use a custom version of Python by modifying this setting to include the full path.
   "python.pythonPath": "~/.pyenv/versions/${workspaceFolderBasename}/bin/python",
@@ -141,4 +141,17 @@
 
   // No unit for zero needed.
   "css.lint.zeroUnits": "error",
+
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[sass]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.tabSize": 2
+  },
 }
