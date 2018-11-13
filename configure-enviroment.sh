@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+
+# TODOS
+# 1- Verificar e instalar zlib
+
 if ! [ -x "$(command -v npm)" ]; then
   echo 'Node is not installed!'
   echo 'Installing node...'
