@@ -1,3 +1,5 @@
+PYENV_ROOT="${HOME}/.pyenv"
+export PATH="${PYENV_ROOT}/bin:$PATH"
 alias docker-clean='docker stop $(docker ps -aq);docker rm $(docker ps -aq)'
 
 # TODO:
