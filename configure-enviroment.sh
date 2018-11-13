@@ -24,6 +24,13 @@ if ! [ -x "$(command -v pyenv)" ]; then
   echo 'Installed!'
 fi
 
+if ! [ -x "$(command -v jq)" ]; then
+  echo 'jq is not installed!'
+  echo 'Installing pyenv...'
+  sudo apt-get install jq
+  echo 'Installed!'
+fi
+
 if ! [ -x "$(command -v code)" ]; then
   echo 'VSCode is not installed!'
   echo 'Installing VSCode...'
