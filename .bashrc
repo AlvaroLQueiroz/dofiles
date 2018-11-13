@@ -7,7 +7,7 @@ alias docker-clean='docker stop $(docker ps -aq);docker rm $(docker ps -aq)'
 # 2 - Alias para atualizar dependencias python
 # 3 - Alias para atualizar dependencias node
 # 4 - Alias para atualizar dependencias do vscode no repo
-# 5 - Alias para atualizar configs(git, vscode, bash, etc) no repo
+# 5 - Alias para atualizar configs(git, vscode, bash, etc) no repo (jq para juntar json)
 
 
 # create a virtualenv with
