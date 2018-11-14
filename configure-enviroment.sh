@@ -80,3 +80,4 @@ sysctl -p
 curl -L https://github.com/AlvaroLQueiroz/dofiles/raw/master/.bashrc >> $HOME/.bashrc
 
 # TODO
+#curl -XGET https://raw.githubusercontent.com/docker/cli/master/contrib/completion/bash/docker > $(brew --prefix)/etc/bash_completion.d/docker
