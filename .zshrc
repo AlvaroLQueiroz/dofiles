@@ -1,6 +1,6 @@
-PYENV_ROOT="${HOME}/.pyenv"
-export PATH="${PYENV_ROOT}/bin:$PATH"
+
 alias docker-clean='docker stop $(docker ps -aq);docker rm $(docker ps -aq)'
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # TODO:
 # 1 - Alias para criar automaticamente venv para projeto
